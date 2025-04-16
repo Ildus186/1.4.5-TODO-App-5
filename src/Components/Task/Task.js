@@ -28,7 +28,7 @@ export default class Task extends Component {
       onToggleCompleted
     } = this.props;
 
-    const timeAgo = formatDistanceToNow(created, { includeSeconds: true, addSuffix: true });
+    const timeAgo = formatDistanceToNow(created, { includeSeconds: true, addSuffix: true })
 
     return (
       <li className={completed ? 'completed' : ''}>
